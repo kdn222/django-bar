@@ -1,4 +1,11 @@
-<h1>Dodaj pizzę</h1>
+{% extends "pizza/base.html" %}
+{% block tytul_head %}
+Django - przykładowa aplikacja Mały Bar
+{% endblock%}
+
+{% block tytul_h1 %}Dodaj pizzę{% endblock %}
+
+{% block tresc %}
 
 <form action="." method="post" id="pform">
     {% csrf_token %}
@@ -19,3 +26,4 @@
     <br /><input type="submit" value="Zapisz">
 </form>
 <h1>{{imie}}</h1>
+{% endblock %}

@@ -1,4 +1,12 @@
-<h1>Lista pizz</h1>
+{% extends "pizza/base.html" %}
+
+{% block tytul_head %}
+Django - przykładowa aplikacja Mały Bar
+{% endblock%}
+
+{% block tytul_h1 %}Lista pizz{% endblock %}
+
+{% block tresc %}
 
 <table class="table">
 <tr><th>Lp.</th><th>Nazwa</th><th>Info</th><th>Operacje</th></tr>
@@ -16,4 +24,5 @@
 </tr>
 {% endfor %}
 </table>
+{% endblock %}
 
